@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置用户信息 | 日常总结</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.45955094.css" as="style"><link rel="preload" href="/assets/js/app.921c3b06.js" as="script"><link rel="preload" href="/assets/js/2.4f9d6ee2.js" as="script"><link rel="preload" href="/assets/js/14.e71aaf53.js" as="script"><link rel="prefetch" href="/assets/js/10.4acd6e3b.js"><link rel="prefetch" href="/assets/js/11.72fb5b16.js"><link rel="prefetch" href="/assets/js/12.40445b50.js"><link rel="prefetch" href="/assets/js/13.7be708d2.js"><link rel="prefetch" href="/assets/js/15.3d6ea30c.js"><link rel="prefetch" href="/assets/js/16.1c59bb6e.js"><link rel="prefetch" href="/assets/js/17.13321de6.js"><link rel="prefetch" href="/assets/js/18.af98cefa.js"><link rel="prefetch" href="/assets/js/19.d8223939.js"><link rel="prefetch" href="/assets/js/20.89828e5b.js"><link rel="prefetch" href="/assets/js/21.1cc1b4af.js"><link rel="prefetch" href="/assets/js/3.52ba4223.js"><link rel="prefetch" href="/assets/js/4.3ce938be.js"><link rel="prefetch" href="/assets/js/5.0886b92c.js"><link rel="prefetch" href="/assets/js/6.567e7358.js"><link rel="prefetch" href="/assets/js/7.ffba3dae.js"><link rel="prefetch" href="/assets/js/8.8191e6f7.js"><link rel="prefetch" href="/assets/js/9.49f815c4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.45955094.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">日常总结</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Es6</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js知识点</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>工具使用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/instrument/git.html" class="active sidebar-link">git</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/instrument/git.html#配置用户信息" class="sidebar-link">配置用户信息</a></li><li class="sidebar-sub-header"><a href="/instrument/git.html#基础" class="sidebar-link">基础</a></li><li class="sidebar-sub-header"><a href="/instrument/git.html#远程仓库的使用" class="sidebar-link">远程仓库的使用</a></li><li class="sidebar-sub-header"><a href="/instrument/git.html#打标签" class="sidebar-link">打标签</a></li><li class="sidebar-sub-header"><a href="/instrument/git.html#分支" class="sidebar-link">分支</a></li></ul></li><li><a href="/instrument/nvm_nrm.html" class="sidebar-link">npm/nrm/nvm</a></li><li><a href="/instrument/highlight.html" class="sidebar-link">Highlight</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>http</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="配置用户信息"><a href="#配置用户信息" class="header-anchor">#</a> 配置用户信息</h2> <div class="language- extra-class"><pre class="language-text"><code>git config --global user.name &quot;John Doe&quot;
+git config --global user.email johndoe@example.com
+</code></pre></div><ul><li>注意</li></ul> <blockquote><p>如果使用了 --global 选项，那么该命令只需要运行一次</p></blockquote> <blockquote><p>当你想针对特定项目使用不同的用户名称与邮件地址时，可以在那个项目目录下运行没有 --global 选项的命令来配置</p></blockquote> <h4 id="检查配置信息"><a href="#检查配置信息" class="header-anchor">#</a> 检查配置信息</h4> <div class="language- extra-class"><pre class="language-text"><code>git config --list
+</code></pre></div><h2 id="基础"><a href="#基础" class="header-anchor">#</a> 基础</h2> <h3 id="_1-克隆现有的仓库-git-clone-url"><a href="#_1-克隆现有的仓库-git-clone-url" class="header-anchor">#</a> 1.克隆现有的仓库 --- git clone [url]</h3> <div class="language- extra-class"><pre class="language-text"><code>1. git clone https://github.com/libgit2/libgit2
+
+2. git clone https://github.com/libgit2/libgit2 mylibgit (自定义本地仓库的名字为mylibgit) 
+</code></pre></div><h3 id="_2-检查当前文件状态"><a href="#_2-检查当前文件状态" class="header-anchor">#</a> 2.检查当前文件状态</h3> <div class="language- extra-class"><pre class="language-text"><code>git status 或者显示简写 git status -s
+</code></pre></div><ul><li>状态返回信息</li></ul> <blockquote><p>1.没有任何改动</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>On branch master
+nothing to commit, working directory clean
+</code></pre></div><blockquote><p>2.创建新文件（文件未被跟踪 ）</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>On branch master
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+    README
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre></div><blockquote><p>3.文件处于暂存状态（运行git add之后的状态）</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+    new file:   README
+</code></pre></div><blockquote><p>4.修改已暂存的文件</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+    modified:   CONTRIBUTING.md
+</code></pre></div><h3 id="_3-暂存已修改文件"><a href="#_3-暂存已修改文件" class="header-anchor">#</a> 3.暂存已修改文件</h3> <div class="language- extra-class"><pre class="language-text"><code>git add CONTRIBUTING.md
+</code></pre></div><h3 id="_4-提交更新"><a href="#_4-提交更新" class="header-anchor">#</a> 4.提交更新</h3> <div class="language- extra-class"><pre class="language-text"><code>git commit -m '提交信息'
+
+跳过使用暂存区域（Git 就会自动把所有已经跟踪过的文件暂存起来一并提交）
+
+git commit -a -m 'added new benchmarks'
+</code></pre></div><h3 id="_5-移除文件"><a href="#_5-移除文件" class="header-anchor">#</a> 5.移除文件</h3> <div class="language- extra-class"><pre class="language-text"><code>git rm PROJECTS.md
+
+git rm -f PROJECTS.md (强制删除)
+
+git rm --cached README (从 Git 仓库中删除，但保留在当前工作目录中)
+</code></pre></div><h3 id="_6-查看提交历史"><a href="#_6-查看提交历史" class="header-anchor">#</a> 6.查看提交历史</h3> <div class="language- extra-class"><pre class="language-text"><code>git log
+
+git log -p -2 (最近两次提交的内容差异)
+
+git log --stat (每次提交的简略的统计信息)
+
+git log --pretty=oneline (使用不同于默认格式的方式展示提交历史)
+
+git log --pretty=format:&quot;%h - %an, %ar : %s&quot; (定制要显示的记录格式)
+
+</code></pre></div><h3 id="_7-撤消操作"><a href="#_7-撤消操作" class="header-anchor">#</a> 7. 撤消操作</h3> <h4 id="取消暂存的文件-运行git-add之后"><a href="#取消暂存的文件-运行git-add之后" class="header-anchor">#</a> 取消暂存的文件(运行git add之后)</h4> <div class="language- extra-class"><pre class="language-text"><code>git reset HEAD CONTRIBUTING.md
+</code></pre></div><h4 id="撤消对文件的修改"><a href="#撤消对文件的修改" class="header-anchor">#</a> 撤消对文件的修改</h4> <div class="language- extra-class"><pre class="language-text"><code>git checkout -- CONTRIBUTING.md
+
+</code></pre></div><h4 id="撤销某次提交"><a href="#撤销某次提交" class="header-anchor">#</a> 撤销某次提交</h4> <div class="language- extra-class"><pre class="language-text"><code>git log //查看提交记录
+
+1.回滚*到*某个提交记录
+git reset --hard 75d7a025771f1451318be259feaf749c0c28dd98 //指向该提交记录
+git push -f
+
+2.回滚某个提交记录
+git revert -n 75d7a025771f1451318be259feaf749c0c28dd98 //用于“反做”某一个版本，以达到撤销该版本的修改的目的
+git revert --continue
+git push
+
+</code></pre></div><h3 id="_8-git-别名"><a href="#_8-git-别名" class="header-anchor">#</a> 8.Git 别名</h3> <div class="language- extra-class"><pre class="language-text"><code>git config --global alias.co checkout
+</code></pre></div><h2 id="远程仓库的使用"><a href="#远程仓库的使用" class="header-anchor">#</a> 远程仓库的使用</h2> <h3 id="_1-查看远程仓库"><a href="#_1-查看远程仓库" class="header-anchor">#</a> 1. 查看远程仓库</h3> <div class="language- extra-class"><pre class="language-text"><code>git remote (列出远程服务器的简写)
+
+git remote -v (显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL)
+</code></pre></div><h3 id="_2-从远程仓库中抓取与拉取"><a href="#_2-从远程仓库中抓取与拉取" class="header-anchor">#</a> 2. 从远程仓库中抓取与拉取</h3> <div class="language- extra-class"><pre class="language-text"><code>git fetch [remote-name] (不会自动合并或修改你当前的工作)
+
+git pull (自动尝试合并到当前所在的分支。)
+</code></pre></div><h3 id="_3-推送到远程仓库"><a href="#_3-推送到远程仓库" class="header-anchor">#</a> 3. 推送到远程仓库</h3> <div class="language- extra-class"><pre class="language-text"><code>git push [remote-name] [branch-name] (之前有推送，必须拉取合并之后才能推送)
+
+</code></pre></div><h2 id="打标签"><a href="#打标签" class="header-anchor">#</a> 打标签</h2> <h3 id="_1-列出标签"><a href="#_1-列出标签" class="header-anchor">#</a> 1.列出标签</h3> <div class="language- extra-class"><pre class="language-text"><code>git tag
+
+git tag -l 'v1.8.5*' (使用特定的模式查找标签)
+
+</code></pre></div><h3 id="_2-创建标签"><a href="#_2-创建标签" class="header-anchor">#</a> 2.创建标签</h3> <div class="language- extra-class"><pre class="language-text"><code>git tag -a v1.4 -m &quot;my version 1.4&quot; (附注标签)
+
+git tag v1.4 (轻量标签)
+
+</code></pre></div><h3 id="_3-共享标签（推送标签到远程仓库）"><a href="#_3-共享标签（推送标签到远程仓库）" class="header-anchor">#</a> 3.共享标签（推送标签到远程仓库）</h3> <div class="language- extra-class"><pre class="language-text"><code>git push origin [tagname]
+
+</code></pre></div><h3 id="_4-后期打标签"><a href="#_4-后期打标签" class="header-anchor">#</a> 4.后期打标签</h3> <div class="language- extra-class"><pre class="language-text"><code>1.git log --pretty=oneline (首先查看提交历史)
+
+2.git tag -a v1.2 9fceb02
+
+</code></pre></div><h3 id="_5-删除标签"><a href="#_5-删除标签" class="header-anchor">#</a> 5.删除标签</h3> <div class="language- extra-class"><pre class="language-text"><code>git tag -d &lt;tagname&gt; (删除本地标签)
+
+git push &lt;remote&gt; :refs/tags/&lt;tagname&gt; （更新到远程仓库）
+
+</code></pre></div><h3 id="_6-检出标签"><a href="#_6-检出标签" class="header-anchor">#</a> 6.检出标签</h3> <div class="language- extra-class"><pre class="language-text"><code>git checkout 2.0.0
+
+</code></pre></div><h3 id="_7-批量操作标签"><a href="#_7-批量操作标签" class="header-anchor">#</a> 7.批量操作标签</h3> <div class="language- extra-class"><pre class="language-text"><code>git tag -l | xargs git tag -d #删除所有本地分支
+
+git fetch origin --prune #从远程拉取所有信息
+
+git tag -l | awk '/v0.[0-4].[0-9]/{print}' | xargs git push origin --delete tag #批量删除Tag
+</code></pre></div><blockquote><p>注意： 如果你做了某些更改然后提交它们，标签不会发生变化，因此，如果你需要进行更改——比如说你正在修复旧版本的错误——这通常需要创建一个新分支：</p></blockquote> <h2 id="分支"><a href="#分支" class="header-anchor">#</a> 分支</h2> <h3 id="_1-分支创建与分支切换"><a href="#_1-分支创建与分支切换" class="header-anchor">#</a> 1.分支创建与分支切换</h3> <div class="language- extra-class"><pre class="language-text"><code>git branch testing
+git checkout testing
+
+git checkout -b testing (创建新分支且切换到该分支)
+</code></pre></div><h3 id="_2-分支的合并"><a href="#_2-分支的合并" class="header-anchor">#</a> 2.分支的合并</h3> <div class="language- extra-class"><pre class="language-text"><code>git checkout master (切换到需要合并的分支)
+
+git merge testing (合并testing分支)
+</code></pre></div><ul><li>遇到冲突时的分支合并</li></ul> <div class="language- extra-class"><pre class="language-text"><code>Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+解决冲突：
+1.手动更改冲突文件
+2.使用图形化工具来解决冲突，运行 git mergetool
+</code></pre></div><h3 id="_3-删除分支"><a href="#_3-删除分支" class="header-anchor">#</a> 3.删除分支</h3> <div class="language- extra-class"><pre class="language-text"><code>git branch -d testing 
+git push origin --delete testing （删除远程分支）
+
+</code></pre></div><h3 id="_4-远程分支"><a href="#_4-远程分支" class="header-anchor">#</a> 4.远程分支</h3> <div class="language- extra-class"><pre class="language-text"><code>git push origin serverfix （推送远程分支）
+
+git checkout -b serverfix origin/serverfix （本地拉取远程分支）
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/jsPoint/req.html" class="prev">
+        请求方式
+      </a></span> <span class="next"><a href="/instrument/nvm_nrm.html">
+        npm/nrm/nvm
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.921c3b06.js" defer></script><script src="/assets/js/2.4f9d6ee2.js" defer></script><script src="/assets/js/14.e71aaf53.js" defer></script>
+  </body>
+</html>
